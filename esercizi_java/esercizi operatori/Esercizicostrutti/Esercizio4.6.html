@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media numeri</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        let testo = "";
+        let somma = 0;
+        let numeri = [10, 20, 30, 40, 50];
+
+        for (let i = 0; i < numeri.length; i++) {
+            testo += "Numero " + (i + 1) + ": " + numeri[i] + "<br>";
+            somma += numeri[i];
+        }
+
+        let media = somma / numeri.length;
+        testo += "<br>La media è: " + media;
+
+        document.getElementById("result").innerHTML = testo;
+    </script>
+</body>
+</html>

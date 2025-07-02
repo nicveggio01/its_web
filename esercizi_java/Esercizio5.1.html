@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confronto Valori</title>
+</head>
+<body>
+    <div id="confronto"></div>
+
+    <script>
+        function confronto(valore1, valore2){
+            let risultato = (valore1 === valore2);
+            document.getElementById("confronto").innerHTML = "I due valori sono uguali? " + risultato;
+            return risultato;
+        }
+
+        confronto(4, 4);
+    </script>
+</body>
+</html>

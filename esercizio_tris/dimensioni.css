@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+table{
+    border-collapse: collapse;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    font-size: 30px;
+}
+
+th{
+    font-weight: normal;
+}
+
+th,td{
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    
+}
+
+table tr:first-child th,
+table tr:first-child td{
+    border-top:none;
+}
+
+table tr td:first-child,
+table tr th:first-child{
+    border-left: none;
+}
+
+table tr:last-child td,
+table tr:last-child th{
+    border-bottom:none;
+}
+
+table tr td:last-child,
+table tr th:last-child{
+    border-right:none;
+}

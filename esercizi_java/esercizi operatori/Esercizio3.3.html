@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="secondi"></div>
+    <div id="minuti"></div>
+    <div id="ore"></div>
+    <script>
+        function Convertitore(totalesecondi){
+
+            let ore= Math.floor(totalesecondi/3600);
+            let secondirimanenti= totalesecondi % 3600;
+            let minuti= Math.floor(secondirimanenti/60)
+            let secondi= secondirimanenti % 60
+
+    
+            
+            document.getElementById("ore").textContent = "Ore: " + ore;
+            document.getElementById("minuti").textContent = "Minuti: " + minuti;
+            document.getElementById("secondi").textContent = "Secondi: " + secondi;  
+
+        }
+
+        Convertitore(1450);
+
+
+    </script>
+    
+</body>
+</html>

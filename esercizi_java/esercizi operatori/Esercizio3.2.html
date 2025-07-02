@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="anni"> </div>
+<div id="età"> </div>
+
+<script>
+    var anno= prompt("Inserisci l'anno corrente: ");
+    var anno_nascita= prompt("Inserisci l'anno di nascita: ");
+
+    var a1= parseInt(anno);
+    var a2= parseInt(anno_nascita);
+
+    document.getElementById("età").innerHTML= "L'età dell'utente: "+ (a1-a2) + " anni."
+    document.getElementById("anni").innerHTML= "Per raggiungere i 100 anni sono necessari" + (100-(a1-a2)) + " anni."
+
+
+
+</script>
+    
+</body>
+</html>

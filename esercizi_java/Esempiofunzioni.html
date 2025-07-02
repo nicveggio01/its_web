@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="risultato"></div>
+    <div id="saluto"></div>
+
+    <script>
+        function somma(num1, num2){
+            document.getElementById("risultato").innerHTML= "la somma é "+ (num1+num2);
+        }
+
+        somma(2,3);
+        // esempio di funzione che torna un valore
+        function benvenuto(nome) {
+            return "Welcome " + nome;
+        }
+
+        let nome= prompt("inserisci il tuo nome: ")
+        let output = benvenuto(nome);
+        document.getElementById("saluto").innerHTML = output;
+    </script>
+</body>
+</html>

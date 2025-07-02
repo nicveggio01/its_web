@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabellina</title>
+</head>
+<body>
+    <div id="result"></div>
+
+    <script>
+        var a;
+        do {
+            a = prompt("Inserisci un numero tra 1 e 10");
+        } while (a < 1 || a > 10);
+
+        a = parseInt(a);
+        var testo = "";
+
+        for (var i = 1; i <= 10; i++) {
+            testo += a + " x " + i + " = " + (a * i) + "<br>";
+        }
+
+        document.getElementById("result").innerHTML = testo;
+    </script>
+</body>
+</html>

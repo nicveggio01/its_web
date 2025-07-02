@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massimo numero</title>
+</head>
+<body>
+    <div id="numeri"></div>
+    <div id="massimo"></div>
+    <script>
+
+        let massimo=0
+        let numeri=[10, 20, 30, 40, 50, 67, 9]
+
+        for(let i=0;i < numeri.length;i++){
+            if (numeri[i] > massimo)
+            massimo=numeri[i]
+        }
+
+        document.getElementById("numeri").innerHTML=numeri
+        document.getElementById("massimo").innerHTML= "il massimo fra i numeri dell'array  è:"+ massimo
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
